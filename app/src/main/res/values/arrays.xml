@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Array con los valores de la cabecera de la tabla-->
+    <string-array name="cabecera_tabla">
+        <item>Material</item>
+        <item> ρω [Kg/m3] </item>
+        <item> η </item>
+        <item> E [GPa] </item>
+        <item> σ </item>
+
+    </string-array>
+
+    <string-array name="cabecera_tabla_modos">
+        <item>Modo</item>
+        <item>Frecuencia</item>
+    </string-array>
+
+    <string-array name="cabecera_tabla_metodos">
+        <item>Tiempo de reverberación</item>
+        <item>125</item>
+        <item>250</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>4000</item>
+
+    </string-array>
+
+
+
+</resources>

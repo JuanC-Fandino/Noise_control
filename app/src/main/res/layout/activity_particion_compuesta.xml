@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.juank.noise_control.Particion_compuesta">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingrese el número de materiales de la partición:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:text="ACEPTAR" />
+
+                <ScrollView
+                    android:id="@+id/sv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearscroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                </ScrollView>
+
+                <TextView
+                    android:id="@+id/tl"
+                    style="@style/AppTheme.BotonCalculadora.Azul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="fill"
+                    android:layout_row="0"
+                    android:gravity="center"
+                    android:text="0"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tl2"
+                    style="@style/AppTheme.BotonCalculadora.Azul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_row="0"
+                    android:text="0"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tl3"
+                    style="@style/AppTheme.BotonCalculadora.Azul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="fill"
+                    android:layout_row="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tl4"
+                    style="@style/AppTheme.BotonCalculadora.Azul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="fill"
+                    android:layout_row="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tl5"
+                    style="@style/AppTheme.BotonCalculadora.Azul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="fill"
+                    android:layout_row="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tl6"
+                    style="@style/AppTheme.BotonCalculadora.Azul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="fill"
+                    android:layout_row="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tl7"
+                    style="@style/AppTheme.BotonCalculadora.Azul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="fill"
+                    android:layout_row="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:visibility="invisible" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
